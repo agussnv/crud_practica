@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./components/Requester.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body style="margin: 0;">
+    <header style="display: flex; height: 80px; border: 1px solid black; align-items: center;">
+      <div style="width: 20%; margin-left: 80px;">
+        <img style="height: 55px;" src="https://i.pinimg.com/736x/38/3a/6d/383a6dec0acc45d2eb684167bcd5cd81.jpg" alt="messiCalliou">
+      </div>
+      <div style="width: 80%; display: flex; justify-content: right; margin-right: 120px;">
+        <ul style="list-style: none; display: flex; gap: 100px;">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </header>
+    <div id="root" style="justify-content: center; display: flex">
+      <table style="border: solid 1px black; padding: 5px; align-content: center">
+        <thead style="border: solid 1px black">
+          <th style="padding: 10px">ID</th>
+          <th style="padding: 10px">UserID</th>
+          <th style="padding: 10px">Title</th>
+          <th style="padding: 10px">Completed</th>
+        </thead>
+        <tbody id="tableBody" style="text-align: center">
+          <td id="loading" style="color: red; font-size: 30px;">Loading...</td>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      createReq();
+    </script>
+  </body>
+</html>
